@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+</head>
+<body>
 <link rel="stylesheet" href="signup.css">
-<form class="form">
+<form class="form" action="Register" method="post">
     <span class="signup">Sign Up</span>
-    <input type="name" placeholder="Name" class="form--input">
-    <input type="email" placeholder="Email address" class="form--input">
-    <input type="password" placeholder="Password" class="form--input">
+    <input type="name" placeholder="Name" name="name" class="form--input">
+    <input type="email" placeholder="Email address" name="email" class="form--input">
+    <input type="password" placeholder="Password" name="password" class="form--input">
     <input type="password" placeholder="Confirm password" class="form--input">
     
+    <div class="form--marketing">
+        <input id="okayToEmail" type="checkbox">
+        <label for="okayToEmail" class="checkbox">
+          I want to join the newsletter
+        </label>
+    </div>
     <button class="form--submit">
         Sign up
-    </button><br>
-    <p class="signup-link">Go to <a href="Login.html">Login</a></p>
+    </button>
 </form>
+</body>
 </html>
